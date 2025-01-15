@@ -1,0 +1,283 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	background: -webkit-gradient(linear, left top, left bottom, from(#7EC796), to(#ffffff)) fixed;
+	margin:0;
+	padding:0;
+	width:auto;
+	height:auto;
+	overflow-x:hidden;
+}
+
+img.logo{
+	width:55px;
+	height:auto;
+	margin:0px;
+	padding:0px;
+	
+}
+header{
+	z-index:999;
+	posititon:fixed;
+	margin-top:10px;
+	margin-left:-70px;
+	width:95%;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	padding:12px 100px;
+	transition:0.5s ease;
+
+}
+header.navigation{
+	position: relative;
+
+
+}
+header .navigation .navigation-items a{
+	position: relative;
+	color:#fff;
+	font-size:1em;
+	font-weight:500;
+	text-decoration:none;
+	margin-left:30px;
+	transition: 0.2s ease;
+	display:inline-block;
+	
+}
+
+header .navigation .navigation-items a:before{
+	content:'';
+	position: absolute;
+	background:#fff;
+	width: 0;
+	height:3px;
+	bottom:0;
+	left:0; 
+	
+}
+header .navigation .navigation-items a:hover:before{
+	width:100%;
+}
+section.about{
+	padding:100px 200px;
+}
+.about{
+	position:relative;
+	width:100%;
+	min-height:100vh;
+	display:flex;
+	justify-content:center;
+	flex-direction: column;
+}
+.about:before{
+	z-index:777;
+	content:'';
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	
+}
+.about .content{
+	z-index:888;
+	color:#fff;
+	width:70%;
+	margin-top:50px;
+	display:none;
+}
+.about .content.active{
+	display:block;
+}
+.about .content h1{
+	font-size:4em;
+	font-weight:900;
+	text-transform:uppercase;
+	letter-spacing: 5px;
+	line-height:75px;
+	marign-bottom:40px;
+	align-content: center;
+}
+
+.about .content a{
+	background:#fff;
+	padding:15px 35px;
+	border-radius:25px;
+	color:#2A52BE;
+	font-size:1.1em;
+	font-weight:500;
+	text-decoration:none;
+}
+
+.about .content{
+	z-index:888;
+	color:#fff;
+	width:70%;
+	margin-top:50px;
+	display:none;
+}
+.about .content.active{
+	display:block;
+}
+.about .content h1{
+	font-size:4em;
+	font-weight:900;
+	text-transform:uppercase;
+	letter-spacing: 5px;
+	line-height:75px;
+	marign-bottom:40px;
+	color:#7EC796;
+	margin-left:300px;
+}
+.about .content h1 span{
+	font-size:1.2em;
+	font-weight:550;
+	margin-left:65px;
+	
+}
+.about .content p{
+	margin-bottom:65px;
+	color:#7EC796;
+}
+.about .content a{
+	background:#fff;
+	padding:15px 35px;
+	border-radius:25px;
+	color:#2A52BE;
+	font-size:1.1em;
+	font-weight:500;
+	text-decoration:none;
+}
+
+.about img{
+	z-index:000;
+	position:absolute;
+	top:0;
+    left:0;
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	filter:sepia(0.1);
+	
+	
+}
+.about:before{
+	z-index:777;
+	content:'';
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	
+}
+
+
+
+
+
+
+@media (max-width:1040px){
+	body{
+	
+	}
+	header{
+		padding:12px 60px;
+	    position:absolute;
+		display:flex;
+	    justify-content: space-between;
+	    align-items:center;
+		
+    
+	}
+	section{
+		padding:100px 20px;
+		overflow-y: hidden;	
+	}
+	h1{
+		position:relative;
+		align-content: center;
+		margin-right:10
+		
+	}
+		
+	header .navigation{
+	  display:none;
+	}
+	header .navigation.active{
+		position: absolute;
+		width: 100%;
+		height:100vh;
+		top:0;
+		left:0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		
+		
+	}
+	header .navigation .navigation-items a{
+		color:black;
+		font-size:1.2em;
+		margin:20px;
+		font-weight: 500;
+		margin-left:30px;
+	}
+
+	header .navigation .navigation-items a:before{
+		background:#fff;
+		height:5px;
+	}
+	
+	header .navigation.active .navigation-items{
+		background:rgba(248,248,248,0.75);
+		width:600px;
+		max-width: 600px;
+		margin:20px;
+		padding:40px;
+		position:absolute;
+		display:flex;
+		flex-direction: column;
+		align-items:center;
+		border-radius:5px;
+		box-shadow: 0 5px 25px rgb(1,1,1);
+		
+		
+	}
+	.about .content{
+	z-index:888;
+	color:#fff;
+	width:70%;
+	margin-top:60px;
+	margin-left:-90px;
+	display:none;
+}
+	
+	.about .content h1{
+		margin-left:100px;
+	}
+	.menu-btn{
+		background: url("../menu_icon copy 2.png")no-repeat;
+		background-size:30px;
+		background-position: center;
+		width:40px;
+		height:40px;
+		cursor:pointer;
+		transition:0.3s ease;
+		
+	}
+	.menu-btn.active{
+		z-index:999;
+		background:url("../close_menu copy 2.png")no-repeat;
+		background-size: 25px;
+		background-position: center;
+		transition:0.3s ease;
+	}
+	img.background{
+		width:contain;
+		height:cover;
+	}
+	
+}

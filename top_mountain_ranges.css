@@ -1,0 +1,320 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	
+	  background: -webkit-gradient(linear, left top, left bottom, from(#7EC796), to(#ffffff)) fixed;
+     overflow-x:hidden;
+
+	/*background: linear-gradient(#9DCF94,#7EC796);*/
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+    
+ 
+}
+
+img.logo{
+	width:75px;
+	height:auto;
+	margin:0px;
+	padding:0px;
+	left:-10px;
+	
+}
+header{
+	z-index:999;
+	posititon:fixed;
+	top:0;
+	left:-35px;
+	width:95%;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	padding:12px 25px;
+	transition:0.5s ease;
+
+}
+header.navigation{
+	position: relative;
+	
+
+
+}
+header .navigation .navigation-items a{
+	position: relative;
+	color:#fff;
+	font-size:1em;
+	font-weight:500;
+	text-decoration:none;
+	margin-left:30px;
+	transition: 0.2s ease;
+	display:inline-block;
+	left:0%;
+	
+}
+
+header .navigation .navigation-items a:before{
+	content:'';
+	position: absolute;
+	background:#fff;
+	width: 0;
+	height:3px;
+	bottom:0;
+	left:0; 
+	
+}
+header .navigation .navigation-items a:hover:before{
+	width:100%;
+}
+header img.logo{
+	left:10%;
+    
+}
+
+section.home{
+	left:40%;
+	width:100%;
+	height:cover;
+}
+.home video{
+	position:relative;
+	top:0;
+    left:0;
+	width:110%;
+	height:575px;
+	object-fit:cover;
+	filter:hue-rotate(20deg);
+	
+}
+h7{
+	font-size:25px;
+	margin-left:50px;
+	font-family: "Optima, sans-serif";
+}
+div.side-nav{
+	position:relative;
+	font-size: 20px;
+	left:15px;
+	border: 2px double;
+	box-shadow:1px 2px 04px 0px;
+	width:350px;
+	font-family: "Optima, sans-serif";
+}
+
+div.wrapper{
+	display:block;
+	top:670px;
+	left:55%;
+	width:auto;
+	height:auto;
+	position:absolute;
+}
+p{
+	max-width:600px;
+	font-family: "Optima, sans-serif";
+}
+h2{
+	margin-left:25%;
+}
+h1{
+	margin-left:15%;
+}
+h1.himilayas{
+	margin-top:-370px;
+	
+}
+h1.atlas{
+	margin-top:-435px;
+	marign-left:20px;
+}
+h1.andes{
+	margin-top:-400px;
+}
+h1.Canadian-Rockies{
+	margin-top:-400px;
+}
+h1.southern{
+	margin-top:-400px;
+}
+
+
+img.himilayas{
+	margin-left:-710px;
+	margin-top:240px;
+	
+}
+img.atlas{
+	margin-left:-710px;
+	max-width:610px;
+	margin-top:50px;
+}
+img.andes{
+	margin-left:-710px;
+		max-width:610px;
+}
+img.Canadian-Rockies{
+	margin-left:-710px;
+	max-width:610px;
+	margin-top:40px;
+}
+img.southern{
+	margin-left:-710px;
+		max-width:610px;
+	margin-top:80px;
+}
+
+
+@media (max-width:1040px){
+	
+	
+	header{
+		padding:20px 20px;
+		
+	}
+		
+	header .navigation{
+	  display:none;
+	}
+	header .navigation.active{
+		position: relative;
+		width: 80%;
+		height:auto;
+		top:0;
+		left:0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 0px;
+		
+		
+	}
+	header .navigation .navigation-items a{
+		color:black;
+		font-size:1.2em;
+		margin:10px;
+		font-weight: 500;
+		margin-left:0px;
+		
+		
+	}
+
+	header .navigation .navigation-items a:before{
+		background:#fff;
+		height:5px;
+	}
+	
+	header .navigation.active .navigation-items{
+		background:rgba(248,248,248,0.75);
+		width:600px;
+		max-width: 600px;
+		margin:20px;
+		padding:40px;
+		position:relative;
+		display:flex;
+		flex-direction: column;
+		align-items:center;
+		border-radius:5px;
+		box-shadow: 0 5px 25px rgb(1,1,1);
+	
+		
+		
+	}
+	
+	.menu-btn{
+		background: url("../menu_icon copy 2.png")no-repeat;
+		background-size:30px;
+		background-position: center;
+		width:40px;
+		height:40px;
+		cursor:pointer;
+		transition:0.3s ease;
+		
+	}
+	.menu-btn.active{
+		z-index:999;
+		background:url("../close_menu copy 2.png")no-repeat;
+		background-size: 25px;
+		background-position: center;
+		transition:0.3s ease;
+	}
+	
+	
+	.home video{
+	display:flex;
+	width: contain;
+	max-width:-device-width;
+	z-index: auto;
+}
+
+section.home{
+	left:40%;
+	width:100%;
+	height:cover;
+}
+h7{
+	font-size:25px;
+	margin-left:280px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	
+}
+div.side-nav{
+	position:relative;
+	font-size: 20px;
+	left:-30px;
+	color:rgba(255,255,255,0.1);
+}
+	section.home{
+		max-width: -device-width;
+	}
+
+div.wrapper{
+	display:block;
+	top:-140px;
+	left:18%;
+	width:auto;
+	height:auto;
+	position:relative;
+	align-content: center;
+	justify-content: center;
+	}
+	hr{
+		max-width:500px;
+		margin-left:45px
+	}
+img.himilayas{
+		margin-left:-10px;
+	    margin-top:10px;
+	}
+	
+	h1.himilayas{
+		margin-top:40px;
+	}
+	img.andes{
+		margin-top:10px;
+		margin-left:-10px;
+	}
+	h1.andes{
+	  margin-top:40px;
+	}
+	img.atlas{
+		margin-left:-10px;
+	    margin-top:10px;
+	}
+	h1.atlas{
+		margin-top:40px;
+	}
+	img.Canadian-Rockies{
+		margin-left:-10px;
+	    margin-top:10px;
+	}
+	h1.Canadian-Rockies{
+		margin-top:40px;
+	}
+	img.southern{
+		margin-left:-10px;
+	    margin-top:10px;
+	}
+	h1.southern{
+		margin-top:40px;
+	}
