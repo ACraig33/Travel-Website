@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang= "en" dir="1tr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title> Travel Page </title>
+	<link rel="stylesheet" href="./CSS/travel.css">
+	
+	
+	
+</head>
+<body>
+	
+	<header>
+		<a href="#"><img class="logo" src="../logo copy 2.png" alt="">
+		</a>
+		<div class="menu-btn"></div>
+	        <div class="navigation">
+				<div class="navigation-items">
+					<a href="travel.html">Home</a>
+					<a href="explore_travel.html">Explore</a>
+					<a href="about_travel.html">About</a>
+					<a href="../resume.html">Contact</a>
+			    </div>
+				</div>
+		</header>
+	
+	     <section class="home">
+	        <video class= "video-slide active"  src="images/stock_video.mp4" autoplay muted loop> </video>
+			 <video class= "video-slide" src="images/video.mp4" autoplay muted loop> </video>
+			 <video class= "video-slide" src="images/Pexels _Videos_2519660.mp4" autoplay muted loop> </video>
+			 <video class="video-slide" src="images/Pexels_Videos_2252797.mp4" autoplay muted loop></video>
+			 <video class="video-slide" src="images/_video.mp4" autoplay muted loop></video>
+			 
+			<div class="content active">
+			  <h1> Adventure<br>
+			    <span> Awaits.</span></h1>
+<p> Lorem ipsum dolor sit amet, an eum diam aliquam ponderum, quo minim munere detraxit in. Esse atqui facilisis ea vix, ut eligendi copiosae vix. Tantas feugait eu ius, sea cu ferri mazim recusabo. Pri ad munere nonumes accusamus, iisque dissentias cu qui, an justo laboramus pri. In vel ancillae sensibus, ex facilisi principes pri.
+  
+  Ei eum vocent noluisse. Eos an labore nemore possim. Sit id idque eirmod eloquentiam. Persius dolorum appellantur eu eos, odio copiosae evertitur ea pri, ne novum animal sit. An vel sanctus sapientem </p>
+				
+			 </div>
+			 <div class="content">
+			  <h1> Find<br>
+			    <span> Yourself Again.</span></h1>
+<p> Lorem ipsum dolor sit amet, an eum diam aliquam ponderum, quo minim munere detraxit in. Esse atqui facilisis ea vix, ut eligendi copiosae vix. Tantas feugait eu ius, sea cu ferri mazim recusabo. Pri ad munere nonumes accusamus, iisque dissentias cu qui, an justo laboramus pri. In vel ancillae sensibus, ex facilisi principes pri.</p>
+				
+				
+			 </div>
+			 <div class="content">
+			  <h1> Blaze Your <br>
+			    <span> Own Trails.</span></h1>
+<p> Lorem ipsum dolor sit amet, an eum diam aliquam ponderum, quo minim munere detraxit in. Esse atqui facilisis ea vix, ut eligendi copiosae vix. Tantas feugait eu ius, sea cu ferri mazim recusabo. Pri ad munere nonumes accusamus, iisque dissentias cu qui, an justo laboramus pri. In vel ancillae sensibus, ex facilisi principes pri.
+  
+  Ei eum vocent noluisse. Eos an labore nemore possim. Sit id idque eirmod eloquentiam. Persius dolorum appellantur eu eos, odio copiosae evertitur ea pri, ne novum animal sit. An vel sanctus sapientem </p>
+				
+				
+			 </div>
+			 <div class="content">
+			  <h1> Discovery<br>
+			    <span> Awaits.</span></h1>
+<p> Lorem ipsum dolor sit amet, an eum diam aliquam ponderum, quo minim munere detraxit in. Esse atqui facilisis ea vix, ut eligendi copiosae vix. Tantas feugait eu ius, sea cu ferri mazim recusabo. Pri ad munere nonumes accusamus, iisque dissentias cu qui, an justo laboramus pri. In vel ancillae sensibus, ex facilisi principes pri.
+  
+  Ei eum vocent noluisse. Eos an labore nemore possim. Sit id idque eirmod eloquentiam. Persius dolorum appellantur eu eos, odio copiosae evertitur ea pri, ne novum animal sit. An vel sanctus sapientem </p>
+				
+				
+			 </div>
+			 <div class="content">
+			  <h1> Explore<br>
+			    <span> Nature.</span></h1>
+<p> Lorem ipsum dolor sit amet, an eum diam aliquam ponderum, quo minim munere detraxit in. Esse atqui facilisis ea vix, ut eligendi copiosae vix. Tantas feugait eu ius, sea cu ferri mazim recusabo. Pri ad munere nonumes accusamus, iisque dissentias cu qui, an justo laboramus pri. In vel ancillae sensibus, ex facilisi principes pri.
+  
+  Ei eum vocent noluisse. Eos an labore nemore possim. oSit id idque eirmod eloquentiam. Persius dolorum appellantur eu eos, odio copiosae evertitur ea pri, ne novum animal sit. An vel sanctus sapientem </p>
+				
+				
+			 </div>
+			
+
+			 <div class="slider-navigation">
+			     <div class="nav-btn active"></div>
+				 <div class="nav-btn"></div>
+				 <div class="nav-btn"></div>
+				 <div class="nav-btn"></div>
+				 <div class="nav-btn"></div>
+			 </div>
+			
+
+	     </section>
+	<script type="text/javascript">
+	const menuBtn= document.querySelector(".menu-btn");
+	 const navigation= document.querySelector(".navigation");
+
+	 
+	     menuBtn.addEventListener("click",()=>{
+			 
+		 menuBtn.classList.toggle("active");
+		 navigation.classList.toggle("active");
+			  });
+
+		
+	
+		
+		//JS for Slidebtns// 
+	  const btns= document.querySelectorAll(".nav-btn");
+	  const slides= document.querySelectorAll(".video-slide");
+	  const contents=document.querySelectorAll(".content");
+		
+		var slideNav= function(manual){
+			
+			btns.forEach((btn)=>{
+				btn.classList.remove("active");
+			});
+			
+			slides.forEach((slide)=>{
+				slide.classList.remove("active");
+			});
+			
+			contents.forEach((content)=>{
+				content.classList.remove("active");
+			});
+			
+			
+			
+		   btns[manual].classList.add("active");
+			 slides[manual].classList.add("active");
+			contents[manual].classList.add("active");
+		};
+		
+		
+		
+		btns.forEach((btn,i)=>{
+			btn.addEventListener("click",()=>{
+			  slideNav(i);
+			});
+		});
+		
+		
+		
+	</script>
+
+		</body>
+	</html>
