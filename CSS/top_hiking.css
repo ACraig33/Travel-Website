@@ -1,0 +1,331 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	
+	  background: -webkit-gradient(linear, left top, left bottom, from(#7EC796), to(#ffffff)) fixed;
+     
+    overflow-x:hidden;
+	/*background: linear-gradient(#9DCF94,#7EC796);*/
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+    
+ 
+}
+
+img.logo{
+	width:75px;
+	height:auto;
+	margin:0px;
+	padding:0px;
+	left:-10px;
+	
+}
+header{
+	z-index:999;
+	posititon:fixed;
+	top:0;
+	left:-35px;
+	width:95%;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	padding:12px 25px;
+	transition:0.5s ease;
+
+}
+header.navigation{
+	position: relative;
+	
+
+
+}
+header .navigation .navigation-items a{
+	position: relative;
+	color:#fff;
+	font-size:1em;
+	font-weight:500;
+	text-decoration:none;
+	margin-left:30px;
+	transition: 0.2s ease;
+	display:inline-block;
+	left:0%;
+	
+}
+
+header .navigation .navigation-items a:before{
+	content:'';
+	position: absolute;
+	background:#fff;
+	width: 0;
+	height:3px;
+	bottom:0;
+	left:0; 
+	
+}
+header .navigation .navigation-items a:hover:before{
+	width:100%;
+}
+header img.logo{
+	left:10%;
+    
+}
+h3{
+	top:200px;
+}
+
+
+section.home{
+	left:40%;
+	width:100%;
+	height:cover;
+}
+
+video{
+	position:relative;
+	top:0;
+    left:0;
+	width:auto;
+	height:575px;
+	filter:hue-rotate(20deg);
+	display:flex;
+	object-fit:cover;
+	
+	
+}
+p{
+	font-size:18px;
+}
+h7{
+	font-size:25px;
+	top:-30%;
+	margin-left:80px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+div.side-nav{
+	position:absolute;
+	font-size: 20px;
+	top:200px;
+	left:1050px;
+	border: 2px double;
+	box-shadow:1px 2px 04px 0px;
+	width:350px;
+	font-family: "Optima, sans-serif";
+}
+
+div.wrapper{
+	display:block;
+	top:270px;
+	left:55%;
+	width:auto;
+	height:auto;
+	position:absolute;
+	font-family: "Optima, sans-serif";
+}
+
+
+h1.inca{
+	margin-top:-50px;
+	margin-left:170px;
+}
+h1.annapurna{
+	margin-top:-450px;
+	margin-left:140px
+}
+h1.kilimanjaro{
+	margin-top:-450px;
+	margin-left:140px
+}
+h1.everest{
+	margin-top:-450px;
+	margin-left:140px
+}
+h1.w_Circuit{
+	margin-top:-450px;
+	margin-left:140px
+}
+h2{
+	margin-left:230px;
+}
+img.inca_Trail{
+	margin-left:-710px;
+	margin-top:250px;
+	position:relative;
+	top:400px;
+}
+p{
+	max-width:600px;
+}
+img.annapurna{
+	margin-top:60px;
+	margin-left:-710px;
+}
+img.kilimanjaro{
+	margin-top:60px;
+	margin-left:-710px;
+}
+img.everest_base{
+	margin-top:60px;
+	margin-left:-710px;
+}
+img.w_Circuit{
+	margin-top:60px;
+	margin-left:-710px;
+}
+
+
+
+
+
+
+
+@media (max-width:1040px){
+	
+	
+	header{
+		padding:100px 20px;
+		
+	}
+		
+	header .navigation{
+	  display:none;
+	}
+	header .navigation.active{
+		position: absolute;
+		z-index: 888;
+		width: 100%;
+		height:100vh;
+		top:0;
+		left:0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		
+		
+	}
+	header .navigation .navigation-items a{
+		color:black;
+		font-size:1.2em;
+		margin:20px;
+		font-weight: 500;
+		margin-left:30px;
+	}
+
+	header .navigation .navigation-items a:before{
+		background:#fff;
+		height:5px;
+	}
+	
+	header .navigation.active .navigation-items{
+		background:rgba(248,248,248,0.75);
+		width:600px;
+		max-width: 600px;
+		margin:20px;
+		padding:40px;
+		position:absolute;
+		display:flex;
+		flex-direction: column;
+		align-items:center;
+		border-radius:5px;
+		box-shadow: 0 5px 25px rgb(1,1,1);
+	
+		
+		
+	}
+	
+	.menu-btn{
+		background: url("../menu_icon copy 2.png")no-repeat;
+		background-size:30px;
+		background-position: center;
+		width:40px;
+		height:40px;
+		cursor:pointer;
+		transition:0.3s ease;
+		
+	}
+	.menu-btn.active{
+		z-index:999;
+		background:url("../close_menu copy 2.png")no-repeat;
+		background-size: 25px;
+		background-position: center;
+		transition:0.3s ease;
+	}
+	
+	
+	.home video{
+	position:relative;
+	top:0;
+    left:0;
+	height:575px;
+	width:auto;
+	object-fit:cover;
+	filter:hue-rotate(20deg);
+	display:flex;
+}
+
+section.home{
+	left:40%;
+	width:100%;
+	height:cover;
+}
+h7{
+	font-size:25px;
+	margin-left:300px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	
+}
+div.side-nav{
+	position:relative;
+	font-size: 20px;
+	left:-30px;
+	color:rgba(255,255,255,0.1);
+}
+
+div.wrapper{
+	display:block;
+	top:-780px;
+	left:05%;
+	width:610px;
+	height:cover;
+	position:relative;
+}
+	h7{
+		margin-left:245px;
+	}
+
+	img.inca_Trail{
+		max-width:610px;
+		margin-left:00px;
+		
+	}
+	img.annapurna{
+		margin-left:-30px;
+	}
+	img.kilimanjaro{
+	 margin-left:-10px;
+	}
+	img.everest_base{
+		margin-left:-30px;
+	}
+	img.w_Circuit{
+		margin-left:-20px
+	}
+	h1.w_Circuit{
+		margin-top:20px;
+	}
+	h1.everest{
+		margin-top:20px;
+	}
+	h1.kilimanjaro{
+		margin-top:40px;
+	}
+	h1.annapurna{
+		margin-top:60px;
+	}
+	h1.inca{
+		margin-top:460px;
+		align-content:center;
+	}
