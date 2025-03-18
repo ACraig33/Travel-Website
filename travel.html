@@ -14,11 +14,11 @@
 	<header>
 		<a href="#"><img class="logo" src="../logo copy 2.png" alt="">
 		</a>
-		<div class="menu-btn"></div>
+		<div class="menu-btn"><img id="menu_img" src="./images/menu.png"></div>
 	        <div class="navigation">
 				<div class="navigation-items">
 					<a href="travel.html">Home</a>
-					<a href="explore_travel.html">Explore</a>
+					<a href="explore_travel.html">Explore New</a>
 			    </div>
 				</div>
 		</header>
@@ -85,17 +85,39 @@
 
 	     </section>
 	<script type="text/javascript">
-	const menuBtn= document.querySelector(".menu-btn");
-	 const navigation= document.querySelector(".navigation");
-
+	<script type="text/javascript">
+      const menuBtn= document.querySelector(".menu-btn");
+	  const navigation= document.querySelector(".navigation");
+      const myImg= document.getElementById("menu_img");
+      const themeToggle= document.querySelector(".light-button");
+      const body= document.body;
+      
+      themeToggle.addEventListener('click', () => {
+      body.classList.toggle('light-mode');
+      navigation.classList.toggle('light-mode');
+      header.classList.toggle('light-mode');
+      });
+      
+      
 	 
 	     menuBtn.addEventListener("click",()=>{
-			 
 		 menuBtn.classList.toggle("active");
 		 navigation.classList.toggle("active");
 			  });
-
-		
+         
+         
+         let isFirstImage= true;
+         
+         menuBtn.addEventListener("click",function(){
+         
+         if (isFirstImage){
+          myImg.src="./img/close_menu.png";
+         } else {
+          myImg.src="./img/menu.png";
+         }
+         
+          isFirstImage = !isFirstImage;
+          });
 	
 		
 		//JS for Slidebtns// 
@@ -132,6 +154,9 @@
 			});
 		});
 		
+		
+		
+	</script>
 		
 		
 	</script>

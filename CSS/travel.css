@@ -87,6 +87,8 @@ section{
 }
 .home .content.active{
 	display:block;
+	margin:auto;
+	margin-bottom:0;
 }
 .home .content h1{
 	font-size:4em;
@@ -102,6 +104,7 @@ section{
 }
 .home .content p{
 	margin-bottom:65px;
+	width:65%
 }
 .home .content a{
 	background:#fff;
